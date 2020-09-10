@@ -1,6 +1,6 @@
 import TodoApp from './components/TodoApp.js';
 
-const $todoApp = document.querySelector('#app');
+const $todo = document.querySelector('#app');
 new TodoApp($todoApp);
 
 const onUserCreateHandler = () => {
