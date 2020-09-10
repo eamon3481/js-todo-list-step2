@@ -1,14 +1,11 @@
-import { Observer } from "../observer/Observer.js";
+import { Observer } from '../observer/Observer.js';
 
-export const TodoFooter = class extends Observer{
+export const TodoFooter = class extends Observer {
+  constructor() {
+    super();
+  }
+  setEvent(){
 
-    constructor() {
-        super();
-    }
-    setState(){
-
-    }
-    render(){
-
-    }
-}
+  }
+  render() {}
+};

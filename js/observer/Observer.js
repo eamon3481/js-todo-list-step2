@@ -1,13 +1,22 @@
 export const Observer = class {
 
-    constructor() {
+    #target;
+    #state;
+
+    constructor(target, state) {
+        this.#target = target;
+        this.#state = state;
+        this.render();
     }
 
-    setState(){
-
+    setState(state) {
+        this.#state = { ...this.#state, ...state };
+        this.render();
     }
 
-    render(){
 
+    render() {
+        throw new Error("Not Exists Render() logic");
     }
-}
+
+};
